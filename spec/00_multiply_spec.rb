@@ -20,9 +20,12 @@ end
 
 describe "sum_of_3_or_5_multiples(final_number)" do
   it "should return the sum of every multiple of 3 and 5 up to the number selected" do
-  expect (sum_of_3_or_5_multiples(10)).to eq(23)
-  expect (sum_of_3_or_5_multiples(11)).to eq(33)
-  expect (sum_of_3_or_5_multiples(0)).to eq(0)
-  expect (sum_of_3_or_5_multiples(3)).to eq(0)
+  expect(sum_of_3_or_5_multiples(10)).to eq(23)
+  expect(sum_of_3_or_5_multiples(11)).to eq(33)
+  expect(sum_of_3_or_5_multiples(0)).to eq(0)
+  expect(sum_of_3_or_5_multiples(-1)).to eq("Yo ! Je ne prends que les entiers naturels. TG")
+  expect(sum_of_3_or_5_multiples(1.23)).to eq("Yo ! Je ne prends que les entiers naturels. TG")
+  expect(sum_of_3_or_5_multiples("chiffre")).to eq("Yo ! Je ne prends que les entiers naturels. TG")
+  expect(sum_of_3_or_5_multiples(3)).to eq(0)
 end
 end

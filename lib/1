@@ -1,0 +1,8 @@
+def indent_my_letter(letter,number)
+	return letter.ord+number.chr
+	
+	  
+end
+
+
+puts indent_my_letter("A",2)
